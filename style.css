@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e3f2fd;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* CV Container */
+.cv-container {
+    max-width: 800px;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.cv-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00796b;
+}
+
+header h1 {
+    color: #00796b;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Sections */
+h2 {
+    color: #00796b;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Profile */
+.profile, .work-experience, .education, .languages, .skills {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* Work Experience */
+.work-experience h3 {
+    color: #00796b;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.work-experience ul {
+    padding-left: 20px;
+}
+
+/* Education */
+.edu {
+    margin-bottom: 15px;
+}
+
+.edu h3 {
+    color: #00796b;
+    font-size: 18px;
+}
+
+/* Languages */
+.languages ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.languages li {
+    background: linear-gradient(135deg, #00796b, #009688);
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.languages li:hover {
+    transform: scale(1.1);
+}
+
+/* Skills */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills li:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .cv-container {
+        padding: 15px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    .languages li, .skills li {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
