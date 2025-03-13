@@ -7,32 +7,36 @@
     <title>CV</title>
 </head>
 <body>
-    
-    <div class="cv-container">
+    <div class="cv-container" itemscope itemtype="https://schema.org/Person">
+        
         <!-- Header Section -->
         <header>
-            <img src="Profile.jpg">
-            <h1>Maryam Bibi</h1>
-            <p><strong>Date of birth:</strong> 01/12/2002  |  <strong>Nationality:</strong> Pakistani</p>
-            <p><strong>Address:</strong> House no B-4 DHQ hospital Staff Colony, Sargodha</p>
-            <p><strong>Email:</strong> maryamrafiq2386@gmail.com </p>
+            <img src="Profile.jpg" itemprop="image" alt="Photo of Maryam Bibi">
+            <h1 itemprop="name">Maryam Bibi</h1>
+            <p><strong>Date of birth:</strong> <span itemprop="birthDate">2002-12-01</span> | <strong>Nationality:</strong> <span itemprop="nationality">Pakistani</span></p>
+            <p><strong>Address:</strong> 
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">House no B-4 DHQ hospital Staff Colony</span>,
+                    <span itemprop="addressLocality">Sargodha</span>, 
+                    <span itemprop="addressCountry">Pakistan</span>
+                </span>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:maryamrafiq2386@gmail.com" itemprop="email">maryamrafiq2386@gmail.com</a></p>
         </header>
 
         <!-- Profile Section -->
         <section class="profile">
             <h2>Profile</h2>
-            <p>Currently studying in BS Computer Science. In my spare time, I practice to build apps.</p>
+            <p itemprop="description">Currently studying in BS Computer Science. In my spare time, I practice to build apps.</p>
         </section>
+        
         <!-- Work Experience -->
         <section class="work-experience">
             <h2>Work Experience</h2>
-            
             <div>
-                <h3>Practicing App Development</h3>
+                <h3 itemprop="hasOccupation">Practicing App Development</h3>
                 <ul>
                     <li>Creation of landing pages</li>
-
-
                     <li>Building apps with Firebase</li>
                 </ul>
             </div>
@@ -41,12 +45,10 @@
         <!-- Education -->
         <section class="education">
             <h2>Education</h2>
-
-            <div class="edu">
+            <div class="edu" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
                 <h3>Computer Science</h3>
-                <p><strong>University of Sargodha</strong> (2021 – 2025)</p>   
+                <p><strong itemprop="name">University of Sargodha</strong> (2021 – 2025)</p>
             </div>
-
             <div class="edu">
                 <h3>Intermediate</h3>
                 <p><strong>Punjab Group of Colleges</strong> (2019-2021)</p>
@@ -58,9 +60,9 @@
         <section class="languages">
             <h2>Languages</h2>
             <ul>
-                <li>English (Fluent)</li>
-                <li>Urdu (Native)</li>
-                <li>Punjabi (Conversational)</li>
+                <li itemprop="knowsLanguage">English (Fluent)</li>
+                <li itemprop="knowsLanguage">Urdu (Native)</li>
+                <li itemprop="knowsLanguage">Punjabi (Conversational)</li>
             </ul>
         </section>
 
@@ -77,6 +79,8 @@
                 <li>Problem Solving</li>
             </ul>
         </section>
+
+        <!-- Reference -->
         <section class="profile">
             <h2>Reference</h2>
             <p>Will be provided at request</p>
